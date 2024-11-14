@@ -1,6 +1,6 @@
 namespace astral_base.SCPRP;
 
-[GameResource("Team", ".team", "")]
+[GameResource("Team", "team", "", Category = "Roleplay")]
 public class Team : GameResource
 {
     public string Name { get; set; }
@@ -11,16 +11,4 @@ public class Team : GameResource
     public float MaxHealth { get; set; }
     public float MaxArmor { get; set; }
     public string Model { get; set; }
-
-    public Team(string name, string description, string category, Color color, List<Item> items, float maxHealth, float maxArmor, string model)
-    {
-        Name = name;
-        Description = description;
-        Category = category;
-        Color = color;
-        Items = items ?? new List<Item>(); // Default to an empty list if null
-        MaxHealth = maxHealth;
-        MaxArmor = maxArmor;
-        Model = model;
-    }
 }
