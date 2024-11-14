@@ -32,8 +32,8 @@ IGameEventHandler<PlayerChangeTeam>
 
 	public bool OnGameEvent( PlayerChangeTeam eventArgs )
 	{
-		Player player = eventArgs.player;
-		Team team = eventArgs.team;
+		var player = eventArgs.player;
+		var team = eventArgs.team;
 
 		Log.Info($"{player.SteamID} is attempting to change to team {team} ");
 
