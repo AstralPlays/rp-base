@@ -5,7 +5,6 @@ namespace astral_base.SCPRP;
 
 public partial class Player
 {
-
     private GameObject ActiveWeapon;
 
 	protected override void OnUpdate()

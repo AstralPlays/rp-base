@@ -41,7 +41,7 @@ public sealed partial class Player : Component
 
 		var hud = Scene.Camera.Hud;
 
-		hud.DrawText( new TextRendering.Scope( this.Health.ToString(), Color.Red, 32 ), Screen.Width * 0.5f );
-		hud.DrawText( new TextRendering.Scope( this.Armor.ToString(), Color.Red, 32 ), Screen.Width * 0.3f );
+		hud.DrawText( new TextRendering.Scope( $"{Health}", Color.Red, 32 ), Screen.Width * 0.5f );
+		hud.DrawText( new TextRendering.Scope( $"{Armor}", Color.Red, 32 ), Screen.Width * 0.3f );
 	}
 }
