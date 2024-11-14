@@ -12,11 +12,11 @@ public sealed partial class Player : Component
 
 	[HostSync]
 	[Property]
-	public ulong SteamID { get; set; };
+	public ulong SteamID { get; set; }
 
 	[HostSync]
 	[Property]
-	public string SteamName { get; set; };
+	public string SteamName { get; set; }
 
 	[HostSync]
 	[Property]
