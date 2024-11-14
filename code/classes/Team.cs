@@ -1,5 +1,6 @@
 namespace astral_base.SCPRP;
 
+[GameResource("Team", ".team", "")]
 public class Team : GameResource
 {
     public string Name { get; set; }
