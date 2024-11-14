@@ -20,6 +20,6 @@ public static class Teams
 	// Get default job when player spawns
 	public static Team Default()
 	{
-		return ResourceLibrary.Get<Team>( "gameplay/jobs/citizen.job" );
+		return ResourceLibrary.Get<Team>( "gameplay/jobs/citizen.team" );
 	}
 }
