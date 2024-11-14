@@ -3,11 +3,13 @@ using Sandbox.Events;
 
 namespace astral_base.SCPRP;
 
-public class EventHandler : Component, 
+public class EventHandler : GameObjectSystem<EventHandler>, 
 IGameEventHandler<PlayerTookDamage>, 
 IGameEventHandler<PlayerTakeDamage>,
 IGameEventHandler<PlayerChangeTeam>
 {
+	public EventHandler(Scene scene) : base(scene) { }
+
 	public bool OnGameEvent( PlayerTookDamage eventArgs )
 	{
 		var player = eventArgs.player;
